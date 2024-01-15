@@ -1,0 +1,432 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec 31 17:16:43 2023
+# Process ID: 39544
+# Current directory: C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2872 C:\Users\James Lin\Desktop\lab8\1219\lab8\project_1\project_1.xpr
+# Log file: C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/vivado.log
+# Journal file: C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/User/Desktop/homework/2/vivado/lab8/1219/lab8/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 694.352 ; gain = 119.078
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab8_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab8_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sources_1/new/lab8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sim_1/new/lab8_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 148d1567570241acaa2c251586fe7db4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab8_tb_behav xil_defaultlib.lab8_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.lab8
+Compiling module xil_defaultlib.lab8_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab8_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/James -notrace
+couldn't read file "C:/Users/James": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 31 20:41:20 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 694.359 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab8_tb_behav -key {Behavioral:sim_1:Functional:lab8_tb} -tclbatch {lab8_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source lab8_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+         0In=x, Out=xxx, State=xxx
+        15In=0, Out=000, State=000
+        30In=1, Out=001, State=000
+        45In=1, Out=000, State=001
+        75In=1, Out=001, State=010
+       105In=0, Out=000, State=100
+       140In=1, Out=001, State=100
+       165In=1, Out=001, State=000
+       175In=0, Out=000, State=000
+$finish called at time : 300 ns : File "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sim_1/new/lab8_tb.v" Line 25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab8_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 715.746 ; gain = 21.387
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab8_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab8_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sources_1/new/lab8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sim_1/new/lab8_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 148d1567570241acaa2c251586fe7db4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab8_tb_behav xil_defaultlib.lab8_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.lab8
+Compiling module xil_defaultlib.lab8_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab8_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab8_tb_behav -key {Behavioral:sim_1:Functional:lab8_tb} -tclbatch {lab8_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source lab8_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+         0In=x, Out=xxx, State=xxx
+        15In=0, Out=000, State=000
+        30In=1, Out=001, State=000
+        45In=1, Out=000, State=001
+        75In=1, Out=001, State=010
+       105In=1, Out=000, State=011
+       135In=1, Out=000, State=001
+       140In=0, Out=001, State=001
+       175In=1, Out=000, State=001
+       195In=1, Out=001, State=010
+       220In=0, Out=000, State=010
+       225In=0, Out=000, State=100
+$finish called at time : 300 ns : File "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sim_1/new/lab8_tb.v" Line 25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab8_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab8_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab8_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sources_1/new/lab8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sim_1/new/lab8_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 148d1567570241acaa2c251586fe7db4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab8_tb_behav xil_defaultlib.lab8_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.lab8
+Compiling module xil_defaultlib.lab8_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab8_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab8_tb_behav -key {Behavioral:sim_1:Functional:lab8_tb} -tclbatch {lab8_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source lab8_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+         0In=x, Out=xxx, State=xxx
+        15In=0, Out=000, State=000
+        30In=1, Out=001, State=000
+        45In=1, Out=000, State=001
+        75In=1, Out=001, State=010
+       105In=0, Out=000, State=100
+       140In=1, Out=001, State=100
+       165In=1, Out=001, State=000
+       175In=0, Out=000, State=000
+$finish called at time : 300 ns : File "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sim_1/new/lab8_tb.v" Line 25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab8_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab8_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab8_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sources_1/new/lab8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sim_1/new/lab8_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab8_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 148d1567570241acaa2c251586fe7db4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab8_tb_behav xil_defaultlib.lab8_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.lab8
+Compiling module xil_defaultlib.lab8_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab8_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab8_tb_behav -key {Behavioral:sim_1:Functional:lab8_tb} -tclbatch {lab8_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source lab8_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+         0In=x, Out=xxx, State=xxx
+        15In=0, Out=000, State=000
+        30In=1, Out=001, State=000
+        45In=1, Out=000, State=001
+        75In=1, Out=001, State=010
+       105In=1, Out=000, State=011
+       110In=0, Out=001, State=011
+       135In=0, Out=000, State=100
+       145In=1, Out=001, State=100
+       165In=1, Out=001, State=000
+       190In=0, Out=000, State=000
+$finish called at time : 300 ns : File "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sim_1/new/lab8_tb.v" Line 25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab8_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: lab8
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 833.605 ; gain = 74.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab8' [C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sources_1/new/lab8.v:3]
+	Parameter S0 bound to: 3'b000 
+	Parameter S1 bound to: 3'b001 
+	Parameter S2 bound to: 3'b010 
+	Parameter S3 bound to: 3'b011 
+	Parameter S4 bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sources_1/new/lab8.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'lab8' (1#1) [C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sources_1/new/lab8.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 875.219 ; gain = 115.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 875.219 ; gain = 115.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 875.219 ; gain = 115.789
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1163.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1227.891 ; gain = 468.461
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1227.891 ; gain = 468.461
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.runs/synth_1
+
+launch_runs synth_1 -jobs 12
+[Sun Dec 31 20:48:36 2023] Launched synth_1...
+Run output will be captured here: C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1279.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -jobs 12
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1870.453 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+[Sun Dec 31 20:50:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1976.488 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1976.488 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1976.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+current_design synth_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab8_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab8_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 148d1567570241acaa2c251586fe7db4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab8_tb_behav xil_defaultlib.lab8_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab8_tb_behav -key {Behavioral:sim_1:Functional:lab8_tb} -tclbatch {lab8_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source lab8_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+         0In=x, Out=xxx, State=xxx
+        15In=0, Out=000, State=000
+        30In=1, Out=001, State=000
+        45In=1, Out=000, State=001
+        75In=1, Out=001, State=010
+       105In=1, Out=000, State=011
+       110In=0, Out=001, State=011
+       135In=0, Out=000, State=100
+       145In=1, Out=001, State=100
+       165In=1, Out=001, State=000
+       190In=0, Out=000, State=000
+$finish called at time : 300 ns : File "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sim_1/new/lab8_tb.v" Line 25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab8_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 31 20:56:55 2023...

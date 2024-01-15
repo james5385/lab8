@@ -1,0 +1,14 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+         0In=x, Out=xxx, State=xxx
+        15In=0, Out=000, State=000
+        30In=1, Out=001, State=000
+        45In=1, Out=000, State=001
+        75In=1, Out=001, State=010
+       105In=1, Out=000, State=011
+       110In=0, Out=001, State=011
+       135In=0, Out=000, State=100
+       145In=1, Out=001, State=100
+       165In=1, Out=001, State=000
+       190In=0, Out=000, State=000
+$finish called at time : 300 ns : File "C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.srcs/sim_1/new/lab8_tb.v" Line 25

@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec 31 17:16:43 2023
+# Process ID: 39544
+# Current directory: C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2872 C:\Users\James Lin\Desktop\lab8\1219\lab8\project_1\project_1.xpr
+# Log file: C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/vivado.log
+# Journal file: C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/James Lin/Desktop/lab8/1219/lab8/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source lab8_tb.tcl
+close_sim
+launch_simulation
+source lab8_tb.tcl
+close_sim
+launch_simulation
+source lab8_tb.tcl
+close_sim
+launch_simulation
+source lab8_tb.tcl
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+open_run impl_1
+current_design synth_1
+close_sim
+launch_simulation
+source lab8_tb.tcl
+close_sim
